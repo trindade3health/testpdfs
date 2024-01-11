@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { PDFDocument } from 'pdf-lib';
 
 const PDFMerger = () => {
-  const [pdf1Url, setPdf1Url] = useState('');
-  const [pdf2Url, setPdf2Url] = useState('');
+  const [pdf1Url, setPdf1Url] = useState('/pdf/app/uploads/2023/09/MPICanosSeguintes_MICFMIMD_outrasIES_2023_24.pdf');
+  const [pdf2Url, setPdf2Url] = useState('/pdf/app/uploads/2021/05/Pr%C3%A9-Requisitos-do-Grupo-A.pdf');
+  const url1 = '/pdf/app/uploads/2023/09/MPICanosSeguintes_MICFMIMD_outrasIES_2023_24.pdf';
+const url2 = '/pdf/app/uploads/2021/05/Pr%C3%A9-Requisitos-do-Grupo-A.pdf';
 
   const mergePdfs = async () => {
     try {
